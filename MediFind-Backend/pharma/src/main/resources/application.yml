@@ -3,19 +3,18 @@ server:
 
 spring:
   datasource:
-    url: jdbc:mysql://db-5308.cs.dal.ca/CSCI5308_9_DEVINT
-    username: CSCI5308_9_DEVINT_USER
-    password: ih4eeFo7ya
+    url: jdbc:mysql://localhost:3306/medifind_db
+    username: root
+    password: "medifind@123"
   jpa:
     show-sql: true
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MySQLDialect    
+        dialect: org.hibernate.dialect.MySQLDialect
     hibernate:
       ddl-auto: update
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-      
 
 logging:
   level:
@@ -31,16 +30,14 @@ token:
   secret:
     key: 48a868a4042f634ac04a117f00a87202131dd7c46c4b32c4acb3edc5e15f4511
 
-
 mail:
-    host: smtp.gmail.com
-    port: 587
-    username: email
-    password: password
-    properties:
-      mail:
-        smtp:
-          auth: true
-          starttls:
-            enable: true
-
+  host: smtp.gmail.com
+  port: 587
+  username: email
+  password: password
+  properties:
+    mail:
+      smtp:
+        auth: true
+        starttls:
+          enable: true

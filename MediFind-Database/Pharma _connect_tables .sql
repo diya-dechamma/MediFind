@@ -1,4 +1,4 @@
-use `CSCI5308_9_DEVINT`;
+USE `medifind_db`;
 
 -- user information
 CREATE TABLE `USERS`(
